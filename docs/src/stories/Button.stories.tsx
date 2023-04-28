@@ -2,18 +2,16 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Form/Button',
+  title: 'Surface/Button',
   component: Button,
+  args: {
+    children: 'Confirmar',
+  },
 } as Meta<ButtonProps>
 
-export const Primary: StoryObj<ButtonProps> = {
-  args: {
-    children: 'Primary Button',
-  },
-}
-
+export const Primary: StoryObj<ButtonProps> = {}
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    children: 'Create new',
+    children: 'Cancelar',
   },
 }
